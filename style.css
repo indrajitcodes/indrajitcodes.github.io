@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1624;
+  color: #fff;
+  /* Remove this 👇 */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+
+  /* ✅ Add this instead: */
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+.content p {
+  color: #ff6b6b;
+  font-weight: bold;
+  font-size: 20px;
+}
+.content h1 {
+  font-size: 64px;
+  color: #ffffff;
+  text-shadow: 2px 2px #00f5d4;
+}
+.content h2 {
+  margin: 15px 0;
+  font-size: 28px;
+}
+.content .btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e63946;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.squares li {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+  animation: float 20s linear infinite;
+}
+.squares li:nth-child(1) { top: 20%; left: 10%; }
+.squares li:nth-child(2) { top: 70%; left: 30%; animation-delay: 2s; }
+.squares li:nth-child(3) { top: 40%; left: 60%; animation-delay: 4s; }
+.squares li:nth-child(4) { top: 80%; left: 80%; animation-delay: 6s; }
+.squares li:nth-child(5) { top: 10%; left: 90%; animation-delay: 8s; }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1000px) rotate(360deg); }
+}
+.about {
+  background: #0f1624;
+  color: #fff;
+  padding: 80px 10%;
+}
+.about h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.about h2 span {
+  color: #e63946;
+}
+.about h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-text {
+  flex: 1 1 55%;
+}
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.about-text .highlight {
+  color: #00f5d4;
+  font-weight: bold;
+}
+.about-img {
+  flex: 1 1 35%;
+  text-align: center;
+}
+.about-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00f5d4;
+}
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Layout Flex */
+.content-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+/* Skills */
+.skills-box, .education-box {
+  flex: 1 1 300px;
+  min-width: 400px;
+}
+
+.skills-box h3, .education-box h3 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;  
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.bar.python {
+  width: 90%;
+  background: #4e8fd3;
+}
+.bar.html {
+  width: 80%;
+  background: #e44d26;
+}
+.bar.css {
+  width: 70%;
+  background: #2965f1;
+}
+
+/* Education Timeline */
+.timeline {
+  position: relative;
+  padding-left: 25px;
+  border-left: 2px solid #00c7a2;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #00c7a2;
+  border-radius: 50%;
+}
+
+.timeline-item .info {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* Projects */
+#projects {
+  padding: 60px 20px;
+  background-color: #0f1624;
+  color: #fff;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,255,255,0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: #00fff7;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}

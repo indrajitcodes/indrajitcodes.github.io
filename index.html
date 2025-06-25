@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="hero">
+    <div class="content">
+      <p>Hello, My name is</p>
+      <h1>Indrajit Vankar</h1>
+      <h2>I'm a <span class="typing"></span></h2>
+      <a href="#about" class="btn">About-me</a>
+    </div>
+    <ul class="squares">
+      <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </section>
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <h3>Indrajit Vankar</h3>
+      <p>
+        I'm a First year student of Diploma in Computer Engineering program at 
+        <span class="highlight">Parul University</span>. I would describe myself as an avid learner with a strong passion for tech.
+        My skills include <strong>AI/ML</strong>, <strong>Web development</strong>, <strong>Python</strong>, <strong>Java</strong> and <strong>JavaScript</strong>.
+      </p>
+      <p>
+        I love learning and sharing. I'm always open to collaboration and exploring new ideas.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="pic.png" alt="Profile" />
+    </div>
+  </div>
+</section>
+<!-- Skills & Education Section -->
+<section id="skills-education">
+  <div class="container">
+    <h2 class="section-title">Skills & Education</h2>
+    <div class="content-flex">
+
+      <!-- Skills -->
+      <div class="skills-box">
+        <h3>Skills</h3>
+        <div class="skill">
+          <p>Python <span>90%</span></p>
+          <div class="progress-bar"><div class="bar python"></div></div>
+        </div> 
+        <div class="skill">
+          <p>HTML <span>80%</span></p>
+          <div class="progress-bar"><div class="bar html"></div></div>
+        </div>
+        <div class="skill">
+          <p>CSS <span>70%</span></p>
+          <div class="progress-bar"><div class="bar css"></div></div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="education-box">
+        <h3>Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div class="info">
+              <strong>Diploma in Computer Engineering</strong><br>
+              Parul University<br>
+              2025 - 2028 
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="dot"></span>
+            <div class="info">
+              <strong>BTech</strong><br>
+              Parul University<br>
+              2028 - 2031
+            </div>
+          </div>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+         <img src="app.png  " alt="To-Do List App">
+         <h3>To-Do List (JavaScript)</h3>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".typing", {
+      strings: ["Coding Enthusiast", "Frontend Developer", "Designer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+  
+
+</body>
+</html>
